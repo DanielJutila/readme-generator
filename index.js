@@ -16,7 +16,7 @@ const questions = [{
   type: 'confirm',
   name: 'includeTableOfContent',
   message: 'Do you want a Table of content in your?',
-  default: true
+  default: true,
 },
 {
   type: 'input',
@@ -31,8 +31,34 @@ const questions = [{
 {
   type: 'input',
   name: 'contribution',
+  message: 'How to contribute'
+},
+{
+  type: 'input',
+  name: 'tests',
+  message: 'What tests did you run?'
+},
+{
+  type: 'input',
+  name: 'github',
+  message: 'What is your github username'
+},
+{
+  type: 'input',
+  name: 'contribution',
   message: 'Contributions'
 },
+{
+  type: 'list',
+  name: 'contact',
+  message: 'What is your preffered method of contact?',
+  choices:['Phone (call)', 'Phone (Text)', 'Email', 'Snail Mail']
+},
+{
+  type: 'input',
+  name: 'contactInfo',
+  message: 'Please input the contact details of your preffered method'
+}
 ];
 // TODO: Create a function to write README file
 function writeToFile(data) {

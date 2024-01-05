@@ -1,16 +1,21 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {
+function generateLicence(licence){
+  if(licence == 'None'){
+    return 'No licence'
+  }
+  if(licence == 'MIT licence'){
+      return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
 
- }
+  }
+  if(licence == 'Apache Licence 2.0'){
+      return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) { }
+  }
+  if(licence == 'GNU GPL v2'){
+    return '[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)'
+    
+  }
+}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) { }
 
 function toc() {
   return `## TableOfContent
@@ -23,14 +28,15 @@ function toc() {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  const tableOfContents = data.includeTableOfContent ? toc() : '';
-  const imageForReadme = data.includeImages ? usageImage() : '';
-  
+
+  const tableOfContents = data.includeTableOfContent ? toc() : '';  
+  const licence = data.licence;  
 
   return `
   
 # ${data.title}
 
+${generateLicence(licence)}
 
 ## Description
 ${data.description}  
@@ -48,7 +54,7 @@ ${data.usage}
 
 
 ## Licence
-
+${generateLicence(licence)}
 
 ## How to Contribute
 ${data.contribution}
@@ -59,7 +65,7 @@ ${data.tests}
 ## Questions
 [My Github](https://github.com/${data.github})
 
-Contact me via ${data.contactInfo} at ${data.contact}
+Contact me via ${data.contact} at ${data.contactInfo}
 `;
 };
 

@@ -1,11 +1,11 @@
 
   
-# Readme Project
+# Readme Generator
 
-[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-Generates a readme file  
+Generates a readme file that you can use on projects  
 
 
 ## TableOfContent
@@ -17,23 +17,23 @@ Generates a readme file
 
 
 ## Installation
-None
+Install and run node index.js command
 
 
 ## Usage Information
-None
+
 
 
 ## Licence
-[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## How to Contribute
-You cant
+You can fork this program 
 
 ## Tests
-None
+
 
 ## Questions
-[My Github](https://github.com/DanielJutila)
+[My Github](https://github.com/danieljutila)
 
-Contact me via daniel.jutila@gmail.com at Email
+Contact me via Email at daniel.jutila@gmail.com

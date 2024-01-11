@@ -66,6 +66,8 @@ const questions = [{
   message: 'Please input the contact details of your preffered method'
 }
 ];
+
+
 // TODO: Create a function to write README file
 function writeToFile(data) {
   let info = generateMarkdown(data);
